@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Content | Chloe Hung</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero / Content Section with Video Background */
+        .content-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.3; /* Adjust opacity as needed */
+            pointer-events: none; /* Ensures the video doesn't interfere with clicking */
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #4b2e83;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4b2e83;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 120px 0 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #2d3748;
+        }
+
+        .content-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .content-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #2d3748;
+        }
+
+        .content-card p {
+            margin-bottom: 20px;
+            color: #4a5568;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #4b2e83;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid #4b2e83;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(75, 46, 131, 0.2);
+        }
+
+        .btn-back {
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4b2e83;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+            margin-top: 60px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .nav-links {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">CH</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="content.html">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <!-- Background Video -->
+        <video class="background-video" autoplay loop muted playsinline preload="auto">
+            <source src="city.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <h2 class="section-title">Additional Content</h2>
+            
+            <!-- Featured Images -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <!-- Profile Image -->
+                <!-- <img src="protrait.jpg" alt="Chloe Hung" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px;"> -->
+                <!-- <p style="margin-top: 10px; margin-bottom: 30px; font-style: italic; color: #666;">Chloe Hung, Product Marketing Manager</p> -->
+                
+                <!-- Map Image -->
+                <img src="map.jpg" alt="Location Map" style="max-width: 70%; height: auto; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <p style="margin-top: 10px; font-style: italic; color: #666;">My Global Marketing Journey</p>
+            </div>
+            
+            <div class="content-card">
+                <h3>Inspired by the World.</h3>
+                <p>
+                    Travel isn’t just an escape—it’s a constant source of inspiration for crafting compelling and market-driven ideas. I love traveling because it opens my mind to new cultures, perspectives, and experiences that fuel my creativity as a product marketing manager. 
+                </p>
+                <p>
+                    Exploring different cities, observing local trends, and immersing myself in unique consumer behaviors inspire fresh marketing strategies. Whether it’s the bold, eye-catching ads of New York, the experiential branding in Chicago, or the seamless digital experiences in Las Vegas, every journey offers insights that shape my approach to storytelling, positioning, and innovation. 
+                </p>
+            </div>
+
+            
+
+            <a href="index.html" class="btn btn-back">Back to Homepage</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Chloe Hung. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
